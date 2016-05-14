@@ -8,7 +8,15 @@ render: function () {
 }
 });
 **/
+/*
 var About = (props) =>{
+  return (
+    <h2> About Component</h2>
+  )
+};
+*/
+
+var About = () =>{
   return (
     <h2> About Component</h2>
   )
