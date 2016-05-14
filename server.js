@@ -2,6 +2,10 @@ var express  =  require('express');
 //define the prot for heroku
 const PORT = process.env.PORT || 3000;
 
+// Create the app
+var app = express();
+
+
 // set a middleware to redirect all the https requests to http
 app.use(function(req,res, next){
   if(req.headers['x-forwarded-proto'] === 'http'){
@@ -12,9 +16,6 @@ app.use(function(req,res, next){
     res.redirect('http://'+req.hostname+req.url);
   }
 });
-
-// Create the app
-var app = express();
 
 //set the static folder
 app.use(express.static('public'));
