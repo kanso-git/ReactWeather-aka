@@ -18,7 +18,11 @@ var About = (props) =>{
 
 var About = () =>{
   return (
-    <h2> About Component</h2>
+    <div>
+    <h3>About </h3>
+    <p>Welcome to the about page</p>
+    </div>
+
   )
 };
 
