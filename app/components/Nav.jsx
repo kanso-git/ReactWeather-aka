@@ -16,9 +16,7 @@ render: function(){
         <ul className="menu">
           <li className="menu-text">React Weather App</li>
           <li>
-            <IndexLink
-              to="/"
-              activeClassName="active"
+            <IndexLink to="/" activeClassName="active"
               activeStyle={{
                 fontWeight: 'bold'
               }}>Get Weather
@@ -52,7 +50,7 @@ render: function(){
 
            </li>
            <li>
-             <input type="submit" value="Get Weather"className="button"></input>
+             <input type="submit" value="Get Weather" className="button"></input>
            </li>
           </ul>
         </form>
