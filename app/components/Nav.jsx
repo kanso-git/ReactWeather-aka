@@ -46,7 +46,7 @@ render: function(){
         <form  onSubmit={this.onSearch}>
           <ul className="menu">
            <li>
-            <input type="search" placeholder="Search weather"></input>
+            <input type="search" placeholder="Search weather by city"></input>
 
            </li>
            <li>

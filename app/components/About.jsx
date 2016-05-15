@@ -18,7 +18,7 @@ var About = (props) =>{
 
 var About = () =>{
   return (
-    <div>
+    <div className="page-title">
       <br/>
       <table>
       <thead>

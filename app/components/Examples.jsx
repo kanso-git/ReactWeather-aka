@@ -14,7 +14,7 @@ var Examples = React.createClass({
 */
 var Examples  = (props) =>{
   return (
-    <div>
+    <div className="page-title">
       <h1 className="text-center"> Examples</h1>
       <p> Here are a few example locations to try out :</p>
       <ol>
