@@ -9,7 +9,7 @@ var app = express();
 
 // set a middleware to redirect all the https requests to http
 app.use(function(req,res, next){
-  var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+  var fullUrl = req.headers.host+'/'+req.url;
   console.log("fullUrl is "+fullUrl);
 
   if(req.headers['x-forwarded-proto'] === 'https'){
