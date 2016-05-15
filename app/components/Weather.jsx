@@ -41,6 +41,22 @@ var Weather = React.createClass({
           self.setState(weatherObject);
         })
     },
+
+    componentDidMount: function(){
+      var city =this.props.location.query.city;
+      if(typeof city ==='string' && city.trim().length>0){
+        this.handleWeather({city:city});
+        window.location.hash ='#/';
+      }
+    },
+    componentWillReceiveProps: function(newProps){
+      
+      var city =newProps.location.query.city;
+      if(typeof city ==='string' && city.trim().length>0){
+        this.handleWeather({city:city});
+        window.location.hash ='#/';
+      }
+    },
     // this is a built in function
     render: function() {
         var {weather, city, isLoading,errorMessage} = this.state;

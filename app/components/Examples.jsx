@@ -21,6 +21,8 @@ var Examples  = (props) =>{
         <li> <Link to="/?city=orbe">Orbe, CH</Link></li>
         <li> <Link to="/?city=lausanne">Lausanne, CH</Link></li>
         <li> <Link to="/?city=geneva">Genève, CH</Link></li>
+          <li> <Link to="/?city=Yverdon-les-Bains">Yverdon-les-Bains, CH</Link></li>
+
       </ol>
     </div>
   )
