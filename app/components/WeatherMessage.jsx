@@ -15,11 +15,15 @@ render: function () {
 */
 // react stateless function syntax
 var WeatherMessage = ({weather, city} ) =>{
-  //var {weather, city} = props;
+  var url = `http://openweathermap.org/find?q=${city}`;
+  console.log(" Message URL :"+url);
   return (
-  <div>
-    <h3> Currently it's {weather} in {city} !!</h3>
-  </div>
+    <div className="text-center callout secondary">
+      <h3>{city}</h3>
+      <p>Currently it's {weather} °С </p>
+      <a href={url}> More On this.</a>
+   </div>
+
 
   );
 

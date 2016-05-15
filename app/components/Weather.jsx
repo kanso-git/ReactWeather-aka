@@ -40,7 +40,7 @@ var Weather = React.createClass({
 
         function renderMessage(){
           if(isLoading){
-            return <h3> Fecthing the weather ...</h3>
+            return <progress className="success text-center" max="100" value="75">Fecthing the weather ...</progress>
           }else if(city && weather){
             return <WeatherMessage weather={weather} city={city}></WeatherMessage>;
           }
