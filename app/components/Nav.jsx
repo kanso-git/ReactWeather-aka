@@ -8,10 +8,8 @@ e.preventDefault();
 var city = this.refs.city.value;
 if(typeof city ==='string' && city.trim().length>0){
   this.refs.city.value ='';
-  window.location.hash ='#/?city='+encodeURIComponent(city);  
+  window.location.hash ='#/?city='+encodeURIComponent(city);
 }
-
-
 },
 render: function(){
 
